@@ -3,8 +3,13 @@ class Car:
                  clean_mark: int, brand: str) -> None:
         if 1 <= comfort_class <= 7:
             self.comfort_class = comfort_class
+        else:
+            self.comfort_class = 1
+
         if 1 <= clean_mark <= 10:
             self.clean_mark = clean_mark
+        else:
+            self.clean_mark = 1
 
         self.brand = brand
 
@@ -15,8 +20,13 @@ class CarWashStation:
                  count_of_ratings: int) -> None:
         if 1.0 <= distance_from_city_center <= 10.0:
             self.distance_from_city_center = distance_from_city_center
+        else:
+            self.distance_from_city_center = 1.0
+
         if 1.0 <= average_rating <= 5.0:
             self.average_rating = average_rating
+        else:
+            self.average_rating = 1.0
 
         self.clean_power = clean_power
         self.count_of_ratings = count_of_ratings
